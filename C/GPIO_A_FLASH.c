@@ -6,7 +6,6 @@
 #define GPIO_ODR_REGISTER (BASE_ADDRESS + 0x14UL)
 #define RCC_AHBRSTR (RCC + 0x28UL)
 
-
 int main(void)
 {
 	volatile unsigned long *RCC_AHBENR_POINTER = (volatile unsigned long *) RCC_AHBENR;
