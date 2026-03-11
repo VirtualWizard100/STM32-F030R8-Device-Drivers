@@ -21,7 +21,7 @@ int main() {
 
 	*GPIO_MODER_POINTER |= 0x1UL;
 
-	volatile unsignned long *GPIO_BSRR_POINTER = (volatile unsigned long *) GPIO_BSRR;
+	volatile unsigned long *GPIO_BSRR_POINTER = (volatile unsigned long *) GPIO_BSRR;
 
 	while (1) {
 		*GPIO_BSRR_POINTER |= 0x1UL;
