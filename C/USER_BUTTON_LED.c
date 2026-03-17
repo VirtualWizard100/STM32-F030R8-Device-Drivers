@@ -22,8 +22,7 @@
 /* GPIOC_IDR Values */
 #define PIN_13 (0x1UL << 13)
 
-int main(void)
-{
+int main(void) {
         volatile unsigned long *RCC_AHBENR_POINTER = (volatile unsigned long *) RCC_AHBENR;
 
         /* Enable the clock for GPIO A */
